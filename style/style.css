@@ -1,0 +1,127 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* Full Reset */
+*{
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Utilities */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFE8DF;
+    list-style: none;
+}
+h1, h2,h3,h4{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+.btn{
+    background-color: #157fd0;
+    padding:0.75rem;
+    border-radius: 0.25rem;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+/* Header */
+header{
+    margin:1rem;
+}
+header>p{
+    padding-bottom: 1rem;
+}
+/* Grid */
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Inner Grid Element */
+#grid-element{
+    width:30vw;
+    height:61vh;
+    background-color:#FFFFFF;
+    padding:1.5rem;
+    margin:1rem;
+    border-radius: 0.75rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.grid-element-name{
+    margin:0;
+}
+
+/* Logos */
+#lang-label{
+    display: flex;
+    font-size: 1.5rem;
+}
+#lang-label > P{
+    margin-right:0.5rem;
+}
+.fa-python{
+    color: #366996;
+}
+.fa-cuttlefish, .fa-plus{
+    color:#00589d;
+}
+.fa-html5{
+    color: #d94925;
+}
+.fa-css3-alt{
+    color:#0177bd;
+}
+.fa-js-square{
+    color: #e7d14b;
+}
+/* Links */
+#link-contributor >a{
+    color:#333;
+    padding-right:0.25rem;
+}
+
+#link-contributor >a:focus{
+    color:#333;
+}
+
+/* Link Logos */
+.fa-twitter{
+    color: #1d98e6;
+}
+.fa-github{
+    color: #1b1e22;
+}
+.fa-linkedin{
+    color:#0861b9;
+}
+
+/* Content */
+#content >a{
+    display: block;
+}
+
+/* Media Queries */
+@media (max-width:1024px) {
+    #grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #grid-element{
+        width:45vw;
+        height:125vh;
+    }
+}
+@media (max-width:800px) {
+    #grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #grid-element{
+        width:80vw;
+        height:125vh;
+    }
+}
