@@ -1,1 +1,1 @@
-# fc-hacktoberfest
+# Hacktoberfest - Frequency Club
