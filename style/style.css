@@ -10,7 +10,7 @@
 /* Utilities */
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #FFE8DF;
+    background-color: #FFF8E5;
     list-style: none;
 }
 h1, h2,h3,h4{
@@ -21,7 +21,7 @@ a{
     color:#333;
 }
 .btn{
-    background-color: #157fd0;
+    background-color: #E05D5D;
     padding:0.75rem;
     border-radius: 0.25rem;
 }
@@ -37,17 +37,16 @@ header>p{
 }
 /* Grid */
 #grid{
+    padding:1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.5rem;
 }
 
 /* Inner Grid Element */
 #grid-element{
-    width:30vw;
-    height:61vh;
     background-color:#FFFFFF;
     padding:1.5rem;
-    margin:1rem;
     border-radius: 0.75rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -78,6 +77,8 @@ header>p{
 .fa-js-square{
     color: #e7d14b;
 }
+
+
 /* Links */
 #link-contributor >a{
     color:#333;
@@ -100,28 +101,31 @@ header>p{
 }
 
 /* Content */
-#content >a{
+.resources{
+    color:#E05D5D;
+}
+.resources >a{
     display: block;
+    color:#E05D5D;
 }
 
 /* Media Queries */
-@media (max-width:1024px) {
+@media (min-width:700px) and (max-width:1024px) {
     #grid{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    #grid-element{
-        width:45vw;
-        height:125vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
     }
 }
-@media (max-width:800px) {
+@media (max-width:500px) {
+    /* Link Contributor */
+    #link-contributor>a{
+        display: block;
+        padding:0.15rem;
+    }
     #grid{
         display: grid;
         grid-template-columns: 1fr;
-    }
-    #grid-element{
-        width:80vw;
-        height:100vh;
+        grid-gap: 1.5rem;
     }
 }
