@@ -123,7 +123,7 @@ header > p {
     grid-gap: 2rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) and (min-width: 300px) {
   /* Link Contributor */
   #link-contributor > a {
     display: block;
