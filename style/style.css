@@ -135,3 +135,12 @@ header > p {
     grid-gap: 1.5rem;
   }
 }
+@media (max-width: 300px) and (min-width: 0px) {
+  /* Link Contributor */
+  #link-contributor > a {
+    display: none;
+  }
+  #grid {
+    display: none;
+  }
+}
